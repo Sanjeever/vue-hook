@@ -27,7 +27,7 @@ const clientHeight = divInstance.value?.clientHeight // <-- 'divInstance.value' 
 </script>
 
 <template>
-  <div ref="fooInstance" />
+  <div ref="divInstance" />
 </template>
 ```
 
@@ -42,6 +42,6 @@ const clientHeight = divInstance.value.clientHeight
 </script>
 
 <template>
-  <div ref="fooInstance" />
+  <div ref="divInstance" />
 </template>
 ```
