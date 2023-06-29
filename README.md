@@ -14,15 +14,34 @@ For Vue3
 npm i @sanjeever/vue-hook
 ```
 
+---
+
+without
+
 ```vue
 <script setup lang="ts">
-import { Foo } from '@/components/foo.vue'
-import { useInstance } from '@sanjeever/vue-hook'
+import { ref } from 'vue'
 
-const fooInstance = useInstance<typeof Foo>()
+const divInstance = ref<HTMLDivElement>()
+const clientHeight = divInstance.value?.clientHeight // <-- 'divInstance.value' is possibly 'undefined'.
 </script>
 
 <template>
-  <Foo ref="fooInstance" />
+  <div ref="fooInstance" />
+</template>
+```
+
+with
+
+```vue
+<script setup lang="ts">
+import { useInstance } from '@sanjeever/vue-hook'
+
+const divInstance = useInstance<typeof HTMLDivElement>()
+const clientHeight = divInstance.value.clientHeight
+</script>
+
+<template>
+  <div ref="fooInstance" />
 </template>
 ```
