@@ -1,0 +1,51 @@
+{
+  "name": "@sanjeever/vue-hook",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.0",
+  "description": "Collection of essential Vue Composition Utilities",
+  "repository": "git@github.com:Sanjeever/vue-hook.git",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "prettier --write ./src/**/*.{js,ts,json}"
+  },
+  "keywords": [
+    "vue",
+    "vue-hook"
+  ],
+  "author": "Sanjeev",
+  "license": "MIT",
+  "devDependencies": {
+    "@sanjeever/prettier-config": "^1.0.1",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}
