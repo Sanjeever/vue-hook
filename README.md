@@ -2,6 +2,10 @@
 
 Collection of essential Vue Composition Utilities
 
+<a href="https://www.npmjs.com/package/@sanjeever/vue-hook"><img src="https://img.shields.io/npm/v/@sanjeever/vue-hook.svg?sanitize=true" alt="Version"></a>
+
+View on [npmjs](https://www.npmjs.com/package/@sanjeever/vue-hook)
+
 ## Usage
 
 For Vue3
