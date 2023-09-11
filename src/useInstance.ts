@@ -19,6 +19,8 @@ import type { Component, Ref } from 'vue'
  * </template>
  * ```
  */
-export const useInstance = <
-  T extends abstract new (...args: any[]) => Component
->() => ref() as Ref<InstanceType<T>>
+export function useInstance<
+  T extends abstract new (...args: any[]) => Component,
+>() {
+  return ref() as Ref<InstanceType<T>>
+}
