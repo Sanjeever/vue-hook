@@ -5,13 +5,19 @@
   },
   "version": "1.0.2",
   "description": "Collection of essential Vue Composition Utilities",
+  "author": "Sanjeev",
+  "license": "MIT",
   "repository": "git@github.com:Sanjeever/vue-hook.git",
+  "keywords": [
+    "vue",
+    "vue-hook"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "main": "./dist/index.mjs",
@@ -30,22 +36,17 @@
   ],
   "scripts": {
     "build": "unbuild",
-    "lint": "prettier --write ./src/**/*.{js,ts,json}"
-  },
-  "keywords": [
-    "vue",
-    "vue-hook"
-  ],
-  "author": "Sanjeev",
-  "license": "MIT",
-  "devDependencies": {
-    "@sanjeever/prettier-config": "^1.0.1",
-    "prettier": "^2.8.8",
-    "rimraf": "^5.0.1",
-    "typescript": "^5.1.6",
-    "unbuild": "^1.2.1"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.41.0",
+    "eslint": "^8.49.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6",
+    "unbuild": "^1.2.1"
   }
 }
