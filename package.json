@@ -45,7 +45,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.41.0",
     "eslint": "^8.49.0",
-    "rimraf": "^5.0.1",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0"
   }
